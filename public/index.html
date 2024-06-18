@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CHI TIẾT CÔNG VIỆC</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h3 class="mb-4">Công việc A</h3>
+    <form id="dataForm" class="mb-4">
+      <div class="form-group">
+        <label for="rowIndex">Row Index:</label>
+        <input type="number" class="form-control" id="rowIndex" name="rowIndex" readonly>
+      </div>
+      <div class="form-group">
+        <label for="rowData">Row Data (comma-separated):</label>
+        <input type="text" class="form-control" id="rowData" name="rowData">
+      </div>
+      <button type="button" class="btn btn-primary" id="viewButton">View</button>
+      <button type="button" class="btn btn-success" id="addButton">Add</button>
+      <button type="button" class="btn btn-warning" id="updateButton">Update</button>
+      <button type="button" class="btn btn-danger" id="deleteButton">Delete</button>
+    </form>
+    <div id="selectedCellInfo" class="alert alert-info" role="alert"></div>
+  </div>
+  <script src="../scripts/excelManager.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</body>
+</html>
